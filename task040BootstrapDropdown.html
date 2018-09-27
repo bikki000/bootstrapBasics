@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Task 40 Bootstrap Dropdowns and Collapsable</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/jQuery3.3.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:wheat">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="dropdown">
+					<button type="button" id="menu1" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+						dropdown Example <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu" aria-labelby="menu1">
+						<li role="presentation"><a role="menuitem" href="#">HTML</a></li>
+						<li role="presentation"><a role="menuitem" href="#">CSS</a></li>
+						<li role="presentation"><a role="menuitem" href="#">JavaScript</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="dropdown">
+					<button type="button" id="menu2" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+						Menu <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu" aria-labelby="menu2">
+						<li role="presentation" class="dropdown-header"><span role="menuitem">Course</span></li>
+						<li role="presentation"><a role="menuitem" href="#">HTML</a></li>
+						<li role="presentation"><a role="menuitem" href="#">CSS</a></li>
+						<li role="presentation"><a role="menuitem" href="#">JavaScript</a></li>
+						<li role="presentation" class="divider"></li>
+						<li role="presentation" class="dropdown-header"><span role="menuitem">Info</span></li>
+						<li role="presentation"><a role="menuitem" href="#">About us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="dropdown">
+					<button type="button" id="menu3" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+						Status <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelby="menu3">
+						<li role="presentation"><a role="menuitem" href="#">Normal</a></li>
+						<li role="presentation" class="disabled"><a role="menuitem" href="#">Disabled</a></li>
+						<li role="presentation" class="active"><a role="menuitem" href="#">Active</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<h1>Drop Up menu.</h1>
+				<h3>Notice the upword caret sign</h3>
+				<div class="dropup">
+					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+						Dropup <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li role="presentation"><a role="menuitem" href="#">HTML</a></li>
+						<li role="presentation"><a role="menuitem" href="#">CSS</a></li>
+						<li role="presentation"><a role="menuitem" href="#">JavaScript</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">
+					Collapsible
+				</button>
+				<div id="demo" class="collapse">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<a href="#demo2" class="btn btn-info" data-toggle="collapse" title="">Collapsible</a>
+				<div id="demo2" class="collapse in">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="panel-group" id="accordian">
+					<div class="panel panel-primary">
+						<div class="panel-heading" data-target="#accbody1" data-toggle="collapse" data-parent="#accordian">
+							Heading 1
+						</div>
+						<div id="accbody1" class="panel-collapse collapse">
+							<div class="panel-body">Body of panel 1</div>
+							<div class="panel-footer">footer</div>
+						</div>
+					</div>
+					<div class="panel panel-success">
+						<div class="panel-heading" data-target="#accbody2" data-toggle="collapse" data-parent="#accordian">
+							Heading 2
+						</div>
+						<div id="accbody2" class="panel-collapse collapse">
+							<div class="panel-body">Body of panel 2</div>
+							<div class="panel-footer">footer</div>
+						</div>
+					</div>
+					<div class="panel panel-danger">
+						<div class="panel-heading" data-target="#accbody3" data-toggle="collapse" data-parent="#accordian">
+							Heading 3
+						</div>
+						<div id="accbody3" class="panel-collapse collapse">
+							<div class="panel-body">Bodyof panel 3</div>
+							<div class="panel-footer">footer</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h1 class="panel-title">
+							<a class="panel-title" href="#panelBody1" data-toggle="collapse">heading</a>
+						</h1>
+					</div>
+					<div id="panelBody1" class="panel-collapse collapse">
+						<div class="panel-body">panel body</div>
+						<div class="panel-footer">footer</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="panel panel-success">
+					<div class="panel-heading" data-target="#body2" data-toggle="collapse">
+						Heading
+					</div>
+					<div id="body2" class="panel-collapse collapse in">
+						<ul class="list-group">
+							<li class="list-group-item">One</li>
+							<li class="list-group-item">Two</li>
+							<li class="list-group-item">Three</li>
+						</ul>
+						<div class="panel-footer">
+							footer
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+
+
+	</div>
+</body>
+</html>

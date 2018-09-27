@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Task 39 Bootstrap List Group and Panels</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/jQuery3.3.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:Wheat">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<ul class="list-group">
+					<li class="list-group-item">Fisrt item</li>
+					<li class="list-group-item">Second item</li>
+					<li class="list-group-item">Third item</li>
+					<li class="list-group-item">Fourth item</li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<ul class="list-group">
+					<li class="list-group-item">News <span class="badge">2</span></li>
+					<li class="list-group-item">Delete <span class="badge">4</span></li>
+					<li class="list-group-item">Messages <span class="badge">6</span></li>
+					<li class="list-group-item">Update <span class="badge">12</span></li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<div class="list-group">
+					<a href="#" class="list-group-item">Fisrt item</a>
+					<a href="#" class="list-group-item">Second item</a>
+					<a href="#" class="list-group-item">Third item</a>
+					<a href="#" class="list-group-item">Fourth item</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="list-group">
+					<span class="list-group-item active">Fisrt item</span>
+					<a href="#" class="list-group-item">Second item</a>
+					<a href="#" class="list-group-item">Third item</a>
+					<a href="#" class="list-group-item">fourth item</a>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="list-group">
+					<span class="list-group-item active">First item</span>
+					<a href="#" class="list-group-item">Second item</a>
+					<a href="#" class="list-group-item disabled">Third</a>
+					<a href="#" class="list-group-item">Third</a>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<ul class="list-group">
+					<li class="list-group-item list-group-item-success">First item (success)</li>
+					<li class="list-group-item list-group-item-info">Second item (Info)</li>
+					<li class="list-group-item list-group-item-warning">Third item (Warning)</li>
+					<li class="list-group-item list-group-item-danger">Fourth item (Danger)</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<h3 class="list-group-item-heading">First item heading</h3>
+						<p class="list-group-item-text">This is the content for the first item heading</p>
+					</a>
+					<a href="#" class="list-group-item">
+						<h3 class="list-group-item-heading">Second item heading</h3>
+						<p class="list-group-item-text">This is the content for the second item heading</p>
+					</a>
+					<a href="#" class="list-group-item">
+						<h3 class="list-group-item-heading">Third item heading</h3>
+						<p class="list-group-item-text">This is the content for the third item heading</p>
+					</a>
+					<a href="#" class="list-group-item">
+						<h3 class="list-group-item-heading">Fourth item heading</h3>
+						<p class="list-group-item-text">This is the content for the fourth item heading</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						This is a normal panel
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Heading
+					</div>
+					<div class="panel-body">
+						This is the body of the panel
+					</div>
+					<div class="panel-footer">
+						Here goes footer
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading">First</div>
+						<div class="panel-body">
+							First means someone/something who/which come earliest
+						</div>
+						<div class="panel-footer">Here goes</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Second</div>
+						<div class="panel-body">
+							Second means someone/something who/which comes after first
+						</div>
+						<div class="panel-footer">Here goes</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Third</div>
+						<div class="panel-body">
+							Third means someone/something who/which come after second
+						</div>
+						<div class="panel-footer">Here goes</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Fourth</div>
+						<div class="panel-body">
+							Fourth means someone/something who/which come after Third
+						</div>
+						<div class="panel-footer">Here goes</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Fifth</div>
+						<div class="panel-body">
+							Fifth means someone/something who/which come after Fourth
+						</div>
+						<div class="panel-footer">Here goes</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="panel-group">
+					<div class="panel panel panel-primary">
+						<div class="panel-heading">First</div>
+						<div class="panel-body">
+							First means someone/something who/which come earliest
+						</div>
+						<div class="panel-footer">Here goes</div>
+					</div>
+					<div class="panel panel panel-success">
+						<div class="panel-heading">Second</div>
+						<div class="panel-body">
+							Second means someone/something who/which comes after first
+						</div>
+						<div class="panel-footer">Here goes</div>
+					</div>
+					<div class="panel panel panel-info">
+						<div class="panel-heading">Third</div>
+						<div class="panel-body">
+							Third means someone/something who/which come after second
+						</div>
+						<div class="panel-footer">Here goes</div>
+					</div>
+					<div class="panel panel panel-warning">
+						<div class="panel-heading">Fourth</div>
+						<div class="panel-body">
+							Fourth means someone/something who/which come after Third
+						</div>
+						<div class="panel-footer">Here goes</div>
+					</div>
+					<div class="panel panel panel-danger">
+						<div class="panel-heading">Fifth</div>
+						<div class="panel-body">
+							Fifth means someone/something who/which come after Fourth
+						</div>
+						<div class="panel-footer">Here goes</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

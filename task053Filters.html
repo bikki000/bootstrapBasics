@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Task 53 Filters</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/jQuery3.3.1.js"></script>
+	<script scr="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			console.log('ready');
+			$('#myi1').keyup(function() {
+
+				var value=$(this).val().toLowerCase();
+				$('#myTable1 tr').filter(function() {
+					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Filterable table</h1>
+		<input type="text" class="form-control" id="myi1" placeholder="search..."><br>
+		<table id="myTable1" class="table table-striped">
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>John</td>
+					<td>Doe</td>
+					<td>John@example.com</td>
+				</tr>
+				<tr>
+					<td>Mary</td>
+					<td>Moe</td>
+					<td>mary@mail.com</td>
+				</tr>
+				<tr>
+					<td>July</td>
+					<td>Dooley</td>
+					<td>July@jquery.com</td>
+				</tr>
+				<tr>
+					<td>Kim</td>
+					<td>Molly</td>
+					<td>kim@cars.com</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

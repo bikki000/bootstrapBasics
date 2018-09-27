@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Task 54 Bootstrap Grid System</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/task054.css">
+	<script src="js/jQuery3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(window).resize(function() {
+				$('#main2 span').each(function() {
+					$(this).text($(this).parent().width());
+				});
+			});
+			// $('#main2 [class^="col"').each(function() {
+			// 	$(this).children('span').text($(this).width());
+			// });
+			$('#main2 span').each(function() {
+				$(this).text($(this).parent().width());
+			});
+		});
+	</script>
+	<script scr="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3 col-md-6 col-lg-4 solid1 h100"></div>
+			<div class="col-sm-9 col-md-6 col-lg-8 solid2 h100">
+				<div class="row">
+					<div class="col-sm-3 col-md-12 col-lg-6 hollow1 h35"></div>
+					<div class="col-sm-9 col-md-12 col-lg-6 hollow1 h35"></div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="main2" class="row">
+			<div class="row">
+				<div id="header" class="col-sm-12 solid1 h100">Header <span class="hollow2"></span></div>
+			</div>
+			<div class="row">
+				<div id="nav" class="col-sm-12 solid2 h25">Navigation <span class="hollow2"></span></div>
+			</div>
+			<div class="row">
+				<div id="sidebar" class="col-sm-12 col-md-3 col-lg-2 solid3 h200">
+					Sidebar <span class="hollow2"></span>
+				</div>
+				<div id="mainContent" class="col-sm-10 col-md-7 col-lg-8 solid4 h200">
+					<div class="row">
+						<div id="content1" class="col-md-12 col-lg-3 hollow1 solid7 h50">
+							Content part 1 <span class="hollow2"></span>
+						</div>
+						<div id="content2" class="col-md-8  col-lg-7 hollow1 solid1 h50">
+							Content part 2 <span class="hollow2"></span>
+						</div>
+						<div id="content3" class="col-md-4  col-lg-2 hollow1 solid2 h50">
+							Content part 3 <span class="hollow2"></span>
+						</div>
+					</div>
+					<span class="hollow2"></span>
+				</div>
+				<div id="ad" class="col-sm-2 col-md-2 col-lg-2 solid5 h200">
+					Ad <span class="hollow2"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div id="footer" class="col-sm-12 solid6 h50">Footer <span class="hollow2"></span></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body {
+	position: relative;
+}
+.header {
+	background-color: #f44336;
+	color: #fff;
+	height: 200px;
+}
+.affix {
+	top: 0;
+	width: 25%;
+	z-index: 9999;
+}
+.section {
+	padding-top: 50px;
+	height: 1000px;
+}
+.section1 {
+	background-color: #1e88ef;
+}
+.section2 {
+	background-color: #673ab7;
+}
+.section3 {
+	background-color: #ff9800;
+}
+.section4 {
+	background-color: #00bcd4;
+}

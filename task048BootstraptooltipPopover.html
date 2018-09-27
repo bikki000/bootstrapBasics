@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Task 48 Bootstrap Tooltip and PopOver</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/jQuery3.3.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('[data-toggle="tooltip"]').tooltip();
+			$('[data-toggle="popover"]').popover();
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<br>
+			<a href="#" data-toggle="tooltip" title="Hooray" data-placement="auto">Hover over to see effect</a><br>
+			<a href="#" data-toggle="tooltip" title="Hooray">hover over me</a><br>
+			<a href="#" data-toggle="tooltip" title="Hooray" data-placement="right">NO! ME ME</a><br>
+			<a href="#" data-toggle="tooltip" title="hooray" data-placement="left">Please me</a><br>
+			<a href="#" data-toggle="tooltip" title="HOW DARE YOU!" data-placement="bottom">hun! losers</a><br>
+		</div>
+
+		<div class="row">
+			<a href="#" data-toggle="popover" title="Hooray" data-content="You :I choose you">click to see effect</a><br>
+			<a href="#" data-toggle="popover" title="Hooray" data-content="Me :I choose you" data-placement="right">Click me</a> | 
+			<a href="#" data-toggle="popover" title="Hooray" data-content="Stupid second" data-placement="left">SECond</a><br>
+			<a href="#" data-toggle="popover" title="DON'T YOU" data-content="You have death wish or something?" data-placement="bottom" data-trigger="focus">huh! complete losers</a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Task 41 Bootstrap tabs and pills</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/jQuery3.3.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:white">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Menu 1</a></li>
+					<li><a href="#">Menu 2</a></li>
+					<li><a href="#">Menu 3</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Menu1</a></li>
+					<li><a href="#">Menu1</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu1 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Sub menuitem 1</a></li>
+							<li><a href="#">Sub menuitem 2</a></li>
+							<li><a href="#">Sub menuitem 3</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<ul class="nav nav-pills">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Menu 1</a></li>
+					<li><a href="#">Menu 2</a></li>
+					<li><a href="#">Menu 3</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Menu 1</a></li>
+					<li><a href="#">Menu 2</a></li>
+					<li><a href="#">Menu 3</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown">
+						<a href="#" clas="dropdown-toggle" data-toggle="dropdown">Menu 1 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Sub menu 1</a></li>
+							<li><a href="#">Sub menu 2</a></li>
+							<li><a href="#">Sub menu 3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">menu 2</a></li>
+					<li><a href="#">menu </a></li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<ul class="nav nav-tabs nav-justified">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Menu1</a></li>
+					<li><a href="#">Menu2</a></li>
+					<li><a href="#">Menu3</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tHome" data-toggle="tab">Home</a></li>
+					<li><a href="#tMenu1" data-toggle="tab">Menu 1</a></li>
+					<li><a href="#tMenu2" data-toggle="tab">Menu 2</a></li>
+					<li><a href="#tMenu3" data-toggle="tab">Menu 3</a></li>
+				</ul>
+				<div class="tab-content">
+					<div id="tHome" class="tab-pane fade in active">
+						<h1>Home</h1>
+						<p>Something goes here</p>
+					</div>
+					<div id="tMenu1" class="tab-pane fade" >
+						<h1>Menu 1</h1>
+						<p>Something goes here for Menu 1</p>
+					</div>
+					<div id="tMenu2" class="tab-pane fade">
+						<h1>Menu 2</h1>
+						<p>Something goes here for menu 2</p>
+					</div>
+					<div id="tMenu3" class="tab-pane fade">
+						<h1>Menu 3</h1>
+						<p>Something goes here for menu 3</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<ul class="nav nav-pills">
+					<li class="active"><a href="#phome" data-toggle="tab">Home</a></li>
+					<li><a href="#pmenu1" data-toggle="tab">Menu 1</a></li>
+					<li><a href="#pmenu2" data-toggle="tab">Menu 2</a></li>
+					<li><a href="#pmenu3" data-toggle="tab">menu 3</a></li>
+				</ul>
+				<div class="tab-content">
+					<div id="phome" class="tab-pane fade in active">
+						<h2>Home</h2>
+						<p>Something goes here</p>
+					</div>
+					<div id="pmenu1" class="tab-pane fade">
+						<h1>Menu 1</h1>
+						<p>Text for Menu 1</p>
+					</div>
+					<div id="pmenu2" class="tab-pane fade">
+						<h1>Menu 2</h1>
+						<p>Context belongs to menu 2</p>
+					</div>
+					<div id="pmenu3" class="tab-pane fade">
+						<h1>Menu 3</h1>
+						<p>Here goes text for menu 3</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

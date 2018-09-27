@@ -1,0 +1,48 @@
+.solid1 {
+	background-color: yellow;
+}
+.solid2 {
+	background-color: pink;
+}
+.solid3 {
+	background-color: #1e88ef;
+}
+.solid4 {
+	background-color: wheat;
+}
+.solid5 {
+	background-color: #ff9800;
+}
+.solid6 {
+	background-color: #00bcd4;
+}
+.solid7 {
+	background-color: #009688;
+}
+.hollow1 {
+	border: 2px solid cyan;
+}
+.hollow2 {
+	border: 1px solid red;
+}
+.h25 {
+	height: 25px;
+}
+.h35 {
+	height: 35px;
+}
+.h50 {
+	height: 50px;
+}
+.h70 {
+	height: 70px;
+}
+.h100 {
+	height: 100px;
+}
+.h140 {
+	height: 140px;
+}
+.h200 {
+	height: 200px;
+}

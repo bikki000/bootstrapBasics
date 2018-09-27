@@ -1,0 +1,26 @@
+body {
+	position: realtive;
+}
+ul.nav-pills {
+	top: 20px;
+	position: fixed;
+}
+.section {
+	padding-top: 50px;
+	height: 1000px;
+}
+.section1 {
+	background-color: #1e88ef;
+}
+.section2 {
+	background-color: #673ab7;
+}
+.section3 {
+	background-color: #ff9800;
+}
+.section41 {
+	background-color: #00bcd4;
+}
+.section42 {
+	background-color: #009688;
+}
